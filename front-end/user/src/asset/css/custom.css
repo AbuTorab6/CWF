@@ -1,0 +1,2484 @@
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+
+  background-color: rgb(248, 249, 250);
+}
+
+.row {
+  width: 124rem;
+  margin: auto;
+}
+
+section {
+  padding: 5rem 0rem;
+}
+
+/***************************************/
+/**********Hero Section*****************/
+/***************************************/
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgb(3, 4, 9, 0.2),
+      rgb(3, 4, 9, 0.2)
+    ),
+    url("../image/heroBG2.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero-section .hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 2rem;
+}
+
+.hero-section .hero-grid:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.hero-video-image {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.hero-video-img {
+  width: 100%;
+}
+
+.hero-video-image:hover {
+  cursor: pointer;
+}
+
+.modal-dialog {
+  margin: 20rem auto !important;
+  font-size: 3rem !important;
+}
+
+.modal-btn {
+  font-size: 1.5rem !important;
+  background-color: crimson;
+  border: 0rem;
+}
+
+.hero-section .play-btn {
+  position: absolute;
+
+  font-size: 6rem;
+  top: 12rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+
+  text-align: center;
+  color: #0fb960;
+}
+
+.hero-section .play-btn:hover {
+  cursor: pointer;
+}
+
+.hero-section h1 {
+  font-size: 6rem;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.hero-textbox .hero-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.838);
+  text-align: justify;
+}
+
+.hero-button {
+  text-align: left;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: transparent;
+
+  color: white;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1rem 5rem;
+  border: 0.3rem solid #ffffff;
+  border-radius: 0.1rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.hero-textbox .dis:hover {
+  background-color: white;
+  color: #030409;
+}
+
+.hero-textbox .about {
+  margin-left: 2rem;
+  background-color: white;
+  color: #030409;
+}
+
+.hero-textbox .about:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* 
+.hero-btn:hover
+{
+    display: inline-block;
+    background:linear-gradient(rgb(33, 197, 155),rgb(80, 222, 99)) !important;
+    
+    color: white;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border: 0rem ;
+    border-radius: 3rem;
+
+    transition: 0.6s !important;
+}
+ */
+
+/***************************************/
+/**********Top Navigation*****************/
+/***************************************/
+.top-nav {
+  /* background-color: #f1b349; */
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  background-color: transparent !important;
+  /* left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    margin: auto; */
+
+  /* margin-top: 1rem; */
+}
+.nav-row {
+  width: 100%;
+  padding: 0rem 2rem;
+  border-bottom: 0.05rem solid rgba(241, 241, 241, 0.464);
+}
+
+.top-nav-grid {
+  width: 100%;
+  padding: 1rem 6rem;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  justify-content: space-between;
+}
+
+.top-nav-grid ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.top-nav-grid ul li {
+  display: inline-block;
+}
+.top-nav-grid ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  font-size: 1.6rem;
+  transition: 1s;
+}
+
+.top-nav-left ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+.top-nav-left ul li span {
+  margin-left: 0.2rem;
+}
+
+.top-nav-left ul li:last-child {
+  margin-left: 5rem;
+}
+
+.top-nav-right ul li a {
+  margin-left: 3rem;
+
+  border-left: 0.09rem solid white;
+  border-right: 0.09rem solid white;
+  padding: 0rem 1rem;
+}
+
+.visibility-none {
+  display: none;
+}
+.visibility-yes {
+  display: block;
+}
+
+/***************************************/
+/*********Mani Navigation Section*****************/
+/***************************************/
+.logo {
+  width: 8rem;
+}
+
+.navigation-background {
+  background-color: transparent;
+
+  width: 100%;
+  padding: 1rem 4rem;
+  margin-top: 6rem;
+}
+
+.navigation-brand {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.navigation-brand:hover {
+  color: white;
+}
+
+.navigation-brand img {
+  width: 5rem;
+}
+
+.navigation-list {
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 2rem 0rem;
+}
+
+/* .navigation-list:hover
+{
+    color: #F1B249;
+    border-left: 0.3rem solid #F1B249;
+   
+}
+ */
+
+.navigation-list::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  display: block;
+  background-color: #f1b249;
+  transition: 0.3s;
+}
+
+.navigation-list:hover {
+  color: #f1b249;
+  /* border-bottom: 0.2rem solid  #6278FF; */
+}
+
+.navigation-list:hover::after {
+  width: 100%;
+}
+
+.navigation-background-scroll {
+  background-color: rgb(3, 4, 9) !important;
+
+  width: 100%;
+  padding: 1rem 4rem;
+  margin-top: 0rem;
+  z-index: 9999;
+  transition: 0.4s;
+
+  box-shadow: 0rem 0.2rem 2rem #1717172a;
+}
+.navigation-list-scroll {
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 2rem 0rem;
+}
+
+/* .navigation-list-scroll:hover
+{
+    color: #0FB960;
+    border-left: 0.3rem solid #0FB960;
+   
+} */
+
+.navigation-list-scroll::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  display: block;
+  background-color: #0fb960;
+  transition: 0.3s;
+}
+
+.navigation-list-scroll:hover {
+  color: #0fb960;
+  /* border-bottom: 0.2rem solid  #6278FF; */
+}
+
+.navigation-list-scroll:hover::after {
+  width: 100%;
+}
+
+/***************************************/
+/**********Gallery Section*****************/
+/***************************************/
+.gallery-section {
+  background-color: #f8f9fa;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  color: #171717;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gallery-section h2::after {
+  content: "";
+  width: 10rem;
+  height: 0.6rem;
+  display: block;
+  background-color: #f1b249;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.gallery-section .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem 2rem;
+
+  margin-top: 6rem;
+}
+
+.gallery-section .gallery-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 0.5rem;
+
+  outline-width: 0.1rem;
+  outline-style: solid;
+  outline-color: #9491918b;
+  outline-offset: 1rem;
+}
+
+.gallery-section .gallery-img:hover {
+  transform: scale(1.06);
+  transition: 0.3s;
+
+  filter: saturate(2);
+}
+
+/***************************************/
+/**********proprietor-section *****************/
+/***************************************/
+.proprietor-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.proprietor-section .proprietor-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 2rem 7rem;
+
+  margin-top: 4rem;
+}
+
+.proprietor-section .proprietor-image {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.proprietor-section .proprietor-img {
+  width: 100%;
+  /* height: 50rem; */
+}
+
+.proprietor-section .proprietor-grid .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proprietor-section h3 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.proprietor-section .proprietor-name {
+  color: #0fb960;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.proprietor-section .proprietor-desi {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 0rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/***************************************/
+/**********Experiance-section *****************/
+/***************************************/
+.experiance-section {
+  background-color: rgb(16, 19, 22);
+}
+
+.experiance-section .experiance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem 2rem;
+
+  margin-top: 4rem;
+}
+
+.experiance-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.experiance-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.experiance-section .experiance-image {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.experiance-section .experiance-img {
+  width: 100%;
+  height: 35rem;
+}
+
+.experiance-section .experiance-grid .col {
+  position: relative;
+}
+
+.experiance-section .experiance-grid .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 35rem;
+
+  background: #0c954ce8 !important;
+
+  opacity: 0;
+
+  visibility: hidden;
+  transition: 0.8s ease-out;
+}
+
+.experiance-section .experiance-grid .experiance-img {
+  width: 100%;
+  height: 35rem;
+}
+
+.experiance-section .col:hover .experiance-img {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+
+.experiance-section .col:hover .overlay {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.experiance-section .experiance-grid p {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 2rem;
+}
+
+.experiance-section .experiance-grid button {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 1.5rem;
+  border: 0rem;
+  margin-top: 2rem;
+  background-color: #0fb960;
+  color: white;
+}
+
+.experiance-section .experiance-grid button:hover {
+  background-color: white;
+  color: black;
+}
+
+/***************************************/
+/**********purchase-section *****************/
+/***************************************/
+.purchase-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.purchase-section .purchase-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem 2rem;
+
+  margin-top: 4rem;
+}
+
+.purchase-section .purchase-grid .col {
+  /* border: 0.2rem solid #0C954D;
+    padding: 2rem 4rem; */
+}
+
+.purchase-section .purchase-grid h3 {
+  color: #0fb960;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.purchase-section .purchase-grid p {
+  color: white;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.purchase-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.purchase-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.purchase-section .purchase-image {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.purchase-section .purchase-img {
+  width: 100%;
+}
+
+/***************************************/
+/**********presentation-section *****************/
+/***************************************/
+.presentation-section {
+  background-color: #030409;
+}
+
+.presentation-section .presentation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem 2rem;
+
+  margin-top: 4rem;
+}
+
+.purchase-section .purchase-grid .col {
+  /* border: 0.2rem solid #0C954D;
+    padding: 2rem 4rem; */
+}
+
+.presentation-section h2 {
+  /* text-align: center; */
+  color: #0fb960;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+.presentation-section h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 8rem;
+}
+.farm-address {
+  margin-top: 10rem;
+}
+
+.presentation-section h3 {
+  /* text-align: center; */
+  color: #0fb960;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+.presentation-section .presentation-grid p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 400;
+}
+
+.presentation-section .presentation-grid .green {
+  color: #0fb960;
+  font-weight: 700;
+}
+
+.presentation-section .myForm {
+  width: 99%;
+  padding: 0rem 7rem;
+  background-color: #030409;
+  border-radius: 0.5rem;
+}
+
+.presentation-section label {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.presentation-name input {
+  background-color: #101316;
+  width: 95%;
+  height: 6rem;
+  font-size: 1.6rem;
+  border: 0rem;
+  padding: 0.9rem;
+  /* border-radius: 0.5rem; */
+
+  color: white;
+
+  border: 0.1rem solid white;
+}
+
+.presentation-name input::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.presentation-msg textarea {
+  background-color: #101316;
+
+  width: 98%;
+  height: 10rem;
+  font-size: 1.6rem;
+
+  border: 0rem;
+  padding: 0.9rem;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+.presentation-msg textarea::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.textarea-lebel {
+  margin-top: 3rem;
+}
+
+.presentation-section button {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: #030409;
+  color: black;
+  border: 0rem;
+
+  margin-top: 4rem;
+
+  padding: 1rem 2rem;
+  border-radius: 0.1rem;
+  border: 0.2rem solid white;
+  color: white;
+}
+
+/***************************************/
+/**********Encounter Section*****************/
+/***************************************/
+.encounter-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.encounter-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.encounter-section h3 {
+  color: #0c954d;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.encounter-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.encounter-section .encounter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 4rem;
+
+  margin-top: 4rem;
+}
+
+.encounter-section .encounter-img {
+  width: 100%;
+}
+
+.encounter-section .encounter-image {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.encounter-section .encounter-img:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+.encounter-section .encounter-grid .encounter-des p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #ffffff;
+}
+
+/***************************************/
+/**********Park Map Section*****************/
+/***************************************/
+.parkmap-section {
+  background-color: #101316;
+}
+
+.parkmap-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.parkmap-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.parkmap-section .parkmap-image {
+  width: 100%;
+
+  margin: auto;
+  overflow: hidden;
+
+  margin-top: 4rem;
+}
+
+.parkmap-section .parkmap-img {
+  /* height: 90vh; */
+  width: 100%;
+}
+
+/***************************************/
+/**********Plan Your Visit Section*****************/
+/***************************************/
+
+.planVisit-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.planVisit-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.planVisit-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.planVisit-section h3 {
+  color: #0c954d;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.planVisit-section .planVisit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem 4rem;
+
+  margin-top: 4rem;
+}
+.planVisit-section .planVisit-grid .col {
+  box-shadow: -0.01rem -0.01rem 0.5rem #0c954d;
+  border-radius: 0.8rem;
+  transition: 0.3s;
+}
+.planVisit-section .planVisit-grid .col:hover {
+  box-shadow: -0.01rem -0.01rem 0.9rem #0c954d;
+}
+
+/* .planVisit-section .planVisit-grid .small-screen {
+  display: none;
+} */
+
+.planVisit-section .planVisit-grid .planVisit-image {
+  width: 100%;
+  margin: auto;
+}
+
+.planVisit-section .planVisit-grid .planVisit-img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.planVisit-section .planVisit-grid p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #ffffff;
+}
+.planVisit-section .planVisit-grid .des {
+  padding: 3rem;
+}
+
+.planVisit-section .planVisitBtn {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 1.5rem;
+  border: 0rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.planVisit-section .btn-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
+}
+.planVisit-section .learnBtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.5rem;
+}
+
+.planVisit-section .bookBtn {
+  background-color: #0c954d;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+/***************************************/
+/**********Our Farm Section*****************/
+/***************************************/
+
+.ourFarm-section {
+  background-color: #101316;
+}
+
+.ourFarm-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ourFarm-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.ourFarm-section h3 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+.ourFarm-section .ourFarm-grid h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #ffffff;
+  letter-spacing: 0.3rem;
+}
+
+.ourFarm-section .ourFarm-grid p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #ffffff95;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.ourFarm-section .ourFarm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem 2rem;
+
+  margin-top: 4rem;
+}
+
+.ourFarm-section .ourFarm-grid .ourFarm-image {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.ourFarm-section .ourFarm-grid .col {
+  position: relative;
+}
+
+.ourFarm-section .ourFarm-grid .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 24rem;
+
+  background: #0c954ce8 !important;
+
+  opacity: 0;
+
+  visibility: hidden;
+  transition: 0.8s ease-out;
+}
+
+.ourFarm-section .ourFarm-grid .ourFarm-img {
+  width: 100%;
+  height: 24rem;
+}
+
+.ourFarm-section .col:hover .ourFarm-img {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+
+.ourFarm-section .col:hover .overlay {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+/***************************************/
+/**********Product Section*****************/
+/***************************************/
+
+.product-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.product-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.product-section h3 {
+  color: #0c954d;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.product-section .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem 4rem;
+
+  margin-top: 4rem;
+}
+
+.product-section .product-grid .small-screen {
+  display: none;
+}
+
+.product-section .product-grid .product-image {
+  width: 90%;
+  margin: auto;
+}
+
+.product-section .product-grid .product-img {
+  width: 100%;
+}
+
+.product-section .product-grid p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.product-section .planVisitBtn {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 1.5rem;
+  border: 0rem;
+  margin-top: 2rem;
+}
+
+.product-section .learnBtn {
+  margin-left: 3rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.5rem;
+}
+
+.product-section .bookBtn {
+  background-color: #0c954d;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+/***************************************/
+/**********mission Section*****************/
+/***************************************/
+.mission-section {
+  background-color: rgb(16, 19, 22);
+}
+
+.mission-section h2 {
+  text-align: center;
+  color: #0fb960;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mission-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0fb960;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.mission-section .mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 4rem;
+
+  margin-top: 4rem;
+}
+
+.mission-section .mission-img {
+  width: 100%;
+}
+
+.mission-section .mission-image {
+  width: 90%;
+  margin: auto;
+}
+
+.mission-section .mission-img:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+.mission-section .mission-grid .mission-des p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: white;
+}
+
+/***************************************/
+/**********Explore Park Section*****************/
+/***************************************/
+
+.explorePark-section {
+  background-color: #f8f9fa;
+}
+.explorePark-section p {
+  font-size: 1.4rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.578);
+}
+
+.explorePark-section h3 {
+  font-size: 2.3rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 2rem 0rem;
+  color: black;
+}
+.explorePark-section h2 {
+  text-align: center;
+  color: #171717;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-top: 4rem;
+}
+
+.explorePark-section h2::after {
+  content: "";
+  width: 30rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #f1b249;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+.explorePark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 4rem;
+
+  margin-top: 5rem;
+}
+
+.explorePark-grid .col {
+  box-shadow: 0.5rem 0.5rem 0.5rem #17171736;
+  border: 0.1rem solid rgba(128, 128, 128, 0.132);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.explorePark-grid .col:hover {
+  box-shadow: -0.5rem -0.5rem 0.5rem #17171736;
+}
+
+.explorePark-img {
+  width: 100%;
+}
+.explorePark-img:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+
+.explorePark-image {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/***************************************/
+/**********Heart pounding  Section*****************/
+/***************************************/
+
+.heartPounding-section {
+  background-color: white;
+}
+.heartPounding-section p {
+  font-size: 1.4rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.578);
+}
+
+.heartPounding-section h3 {
+  font-size: 2.3rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 2rem 0rem;
+  color: black;
+}
+.heartPounding-section h2 {
+  text-align: center;
+  color: #171717;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-top: 4rem;
+}
+
+.heartPounding-section h2::after {
+  content: "";
+  width: 40rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #f1b249;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+.heartPounding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 4rem;
+
+  margin-top: 5rem;
+}
+
+.heartPounding-grid .col {
+  box-shadow: 0.5rem 0.5rem 0.5rem #17171736;
+  border: 0.1rem solid rgba(128, 128, 128, 0.132);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  transition: 0.3s;
+}
+
+.heartPounding-grid .col:hover {
+  box-shadow: -0.5rem -0.5rem 0.5rem #17171736;
+}
+
+.heartPounding-img {
+  width: 100%;
+}
+.heartPounding-img:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+
+.heartPounding-image {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/***************************************/
+/**********visitor Section************/
+/***************************************/
+
+.visitor-section {
+  background-color: white;
+}
+.visitor-des p {
+  font-size: 1.7rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.visitor-section h2 {
+  text-align: center;
+  color: #171717;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-top: 4rem;
+}
+
+.visitor-grid p {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.749);
+}
+
+.visitor-section h3 {
+  font-size: 2.3rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 2rem 0rem;
+  color: black;
+}
+
+.visitor-section h2::after {
+  content: "";
+  width: 30rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #f1b249;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+.visitor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 4rem;
+
+  margin-top: 5rem;
+}
+
+.visitor-grid .col {
+  box-shadow: 0.5rem 0.5rem 0.5rem #17171736;
+  border: 0.1rem solid rgba(128, 128, 128, 0.132);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f1f3f4;
+  transition: 0.3s;
+}
+
+.factoryvisitorInfo-grid .col:hover {
+  box-shadow: -0.5rem -0.5rem 0.5rem #17171736;
+}
+
+.visitor-img {
+  width: 100%;
+}
+.visitor-img:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+
+.visitor-image {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.visitor-grid h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+/***************************************/
+/**********Our Park Section************/
+/***************************************/
+.ourPark-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.ourPark-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ourPark-section .des p {
+  font-size: 2rem;
+
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: white;
+}
+
+.ourPark-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.ourPark-section .ourPark-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 4rem;
+
+  margin-top: 4rem;
+}
+
+.ourPark-section .ourPark-img {
+  width: 100%;
+}
+
+.ourPark-section .ourPark-image {
+  width: 90%;
+  margin: auto;
+}
+
+.ourPark-section .ourPark-img:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+/***************************************/
+/**********expartCare-section************/
+/***************************************/
+
+.expartCare-section {
+  background-color: #101316 !important;
+}
+
+/***************************************/
+/**********History-section************/
+/***************************************/
+
+.history-section {
+  background-color: rgb(3, 4, 9);
+}
+
+.history-section h2 {
+  text-align: center;
+  color: #0c954d;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.history-section .history-des {
+  font-size: 2rem;
+
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.718);
+  margin-top: 5rem;
+}
+
+.history-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #0c954d;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.timeline-container {
+  width: 100%;
+
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline {
+  width: 80%;
+  margin: auto;
+  position: relative;
+
+  max-width: 80rem;
+  padding: 4rem 0rem;
+}
+
+.timeline ul {
+  list-style-type: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.timeline ul li {
+  background-color: rgb(3, 4, 9);
+  padding: 2rem;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+
+  box-shadow: 0.3rem 0.3rem 0.6rem #0c954d;
+  transition: 0.3s;
+}
+
+.timeline ul li:hover {
+  box-shadow: -0.3rem -0.3rem 0.9rem #0c954d;
+}
+.timeline ul li p {
+  color: white;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.timeline ul li h3 {
+  font-size: 1.8rem;
+}
+
+/* creating timeline */
+
+.timeline ul li {
+  width: 50%;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-3rem);
+  border-radius: 2rem 0rem 2rem 2rem;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+  border-radius: 0rem 2rem 2rem 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 90%;
+  background-color: #0c954d;
+  left: 49.8%;
+  transform: translateX(50%);
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 0.2rem solid #0c954d;
+  border-radius: 50%;
+  top: 0rem;
+  transition: 0.2s;
+}
+
+.timeline ul li:nth-child(odd)::after {
+  transform: translate(50%, -50%);
+  right: -3rem;
+}
+
+.timeline ul li:nth-child(even)::after {
+  transform: translate(-50%, -50%);
+  left: -3rem;
+}
+
+.timeline ul li:hover::after {
+  background-color: #0c954d;
+  border: 0.2rem solid white;
+}
+
+/***************************************/
+/**********Contact section************/
+/***************************************/
+.contact-section {
+  background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #171717;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-section h2::after {
+  content: "";
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  background-color: #f1b249;
+  margin: auto;
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem 3rem;
+  margin-top: 5rem;
+}
+
+.contact-grid .col {
+  /* box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.184);
+    padding: 1rem 2rem;
+    border-radius: 0.3rem; */
+}
+
+.contact-grid h3 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.contact-grid p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.675);
+}
+
+.contact-grid .map {
+  width: 90%;
+  margin: auto;
+  height: 25rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+/***************************************/
+/**********Contact form section************/
+/***************************************/
+
+.contact-form-section {
+  background-color: #f8f9fa;
+}
+
+.contact-form-section h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.contact-form-section .myForm {
+  width: 99%;
+  padding: 1.8rem 12.2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 2.2rem;
+}
+
+.contact-form-section .contact-form-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3rem 0rem;
+}
+
+.contact-form-section label {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.contact-name input {
+  background-color: #edeef3;
+  width: 95%;
+  height: 6rem;
+  font-size: 1.6rem;
+  border: 0rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+}
+
+.contact-name input::placeholder {
+  color: #00000054;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.contact-msg textarea {
+  background-color: #edeef3;
+
+  width: 98%;
+  height: 20rem;
+  font-size: 1.6rem;
+
+  border: 0rem;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.contact-msg textarea::placeholder {
+  color: #00000054;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.textarea-lebel {
+  margin-top: 3rem;
+}
+
+.checkbox {
+  width: 2.4rem;
+  height: 2.3rem;
+  margin-right: 1.6rem;
+
+  margin-top: 1.6rem;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.contact-form-section span .red {
+  color: red;
+}
+
+.contact-form-section button {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: #f1b249;
+  color: black;
+  border: 0rem;
+
+  margin-top: 4rem;
+
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+/***************************************/
+/**********Footer section************/
+/***************************************/
+.footer-section {
+  background-color: #030409 !important;
+  background-image: linear-gradient(
+      to left bottom,
+      rgb(3, 4, 9, 0.9),
+      rgb(3, 4, 9, 0.9)
+    ),
+    url("../image/footerMap.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem 3rem;
+}
+.footer-link {
+  color: #ccccd5;
+}
+
+.footer-grid p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.67);
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-grid h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer-grid ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.footer-grid ul li {
+  display: inline-block;
+}
+.footer-grid ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+
+  margin-left: 3rem;
+  border-radius: 0.3rem;
+}
+
+.footer-grid ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer-grid ul .facebook {
+  margin: 0rem !important;
+}
+
+.footer-section-bottom {
+  background-color: #030409;
+  width: 100%;
+  padding: 3rem 0rem;
+}
+
+.footer-section-bottom p {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #0c954d;
+}
+
+/***************************************/
+/*********Every Page Top Section************/
+/***************************************/
+
+.everyPageTop-section {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgb(3, 4, 9, 0.2),
+      rgb(3, 4, 9, 0.2)
+    ),
+    url("../image/heroBG2.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  text-align: center;
+}
+
+.everyPageTop-section h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 16rem;
+  color: white;
+  padding: 2rem;
+
+  border-bottom: 0.2rem solid rgb(241, 178, 73);
+}
+
+/***************************************/
+/*********Team Section************/
+/***************************************/
+.team-section {
+  background-color: #030409;
+}
+
+.team-section h2 {
+  color: #0c954d;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team-section .team-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+
+  margin-top: 5rem;
+}
+
+.team-grid .col {
+  background-color: #101316;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.team-section .team-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 0.3rem solid #0c954d;
+}
+
+.team-section .team-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.team-section h3 {
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.team-section p {
+  color: rgba(255, 255, 255, 0.64);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.team-section ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+.team-section ul li {
+  display: inline-block;
+}
+.team-section ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.3rem;
+}
+
+.team-section ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.team-section ul .facebook {
+  margin: 0rem !important;
+}
+
+/***************************************/
+/**********Responsive Design************/
+/***************************************/
+
+@media screen and (max-width: 1250px) {
+  .row {
+    width: 100%;
+    padding: 0rem 2rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 50.5%;
+  }
+
+  .gallery-section .gallery-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: space-around;
+  }
+
+  .gallery-section .gallery-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .visitor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navigation-background {
+    text-align: center;
+  }
+
+  .navigation-background-scroll {
+    text-align: center;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .navigation-list:hover::after {
+    width: 0%;
+  }
+
+  .navigation-list-scroll:hover::after {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-section .hero-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 7rem 2rem;
+
+    margin-top: 15rem;
+  }
+
+  .hero-section .hero-grid:last-child {
+    display: inline-block;
+  }
+
+  .hero-video-image {
+    width: 55%;
+
+    margin: auto;
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  .hero-video-img {
+    height: 35rem;
+  }
+
+  .hero-section .play-btn {
+    position: absolute;
+
+    font-size: 6rem;
+    top: 13rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+
+    text-align: center;
+    color: white;
+  }
+
+  .hero-section h1 {
+    text-align: center;
+  }
+
+  .hero-textbox .hero-description {
+    text-align: center;
+  }
+
+  .hero-textbox .hero-button {
+    text-align: center;
+  }
+
+  .team-section .team-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav-grid {
+    width: 100%;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: space-between;
+  }
+
+  .gallery-section .gallery-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mission-section .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .explorePark-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heartPounding-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ourPark-section .ourPark-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem 3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ourFarm-section .ourFarm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 3rem;
+  }
+
+  .proprietor-section .proprietor-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 5rem 2rem;
+
+    margin-top: 4rem;
+  }
+
+  .proprietor-section .proprietor-image {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .proprietor-section .proprietor-img {
+    width: 100%;
+    /* height: 50rem; */
+  }
+
+  .purchase-section .purchase-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .presentation-section .presentation-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem 2rem;
+
+    margin-top: 4rem;
+  }
+
+  .team-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .team-section .team-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero-video-image {
+    width: 65%;
+  }
+
+  .hero-video-img {
+    height: 25rem;
+  }
+
+  .hero-section .play-btn {
+    top: 9rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-grid h3 {
+    text-align: center;
+  }
+
+  .contact-form-section .contact-form-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .contact-form-section .myForm {
+    padding: 1.8rem 4rem;
+  }
+
+  .encounter-section .encounter-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem 4rem;
+
+    margin-top: 4rem;
+  }
+
+  .planVisit-section .planVisit-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem 4rem;
+
+    margin-top: 4rem;
+  }
+
+  .small-screen-margin {
+    margin-top: 8rem;
+  }
+
+  .planVisit-section .planVisit-grid .small-screen {
+    display: block;
+  }
+
+  .planVisit-section .planVisit-grid .big-screen {
+    display: none;
+  }
+  .planVisit-section .planVisit-grid .planVisit-image {
+    width: 100%;
+    margin: auto;
+  }
+
+  .product-section .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem 4rem;
+
+    margin-top: 4rem;
+  }
+
+  .product-section .product-grid .small-screen {
+    display: block;
+  }
+
+  .product-section .product-grid .big-screen {
+    display: none;
+  }
+
+  .product-section .product-grid .product-image {
+    width: 100%;
+    margin: auto;
+  }
+
+  .experiance-section .experiance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 2rem;
+
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top-nav-grid {
+    width: 100%;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: space-around;
+  }
+
+  .top-nav-right ul li a {
+    margin-left: 0.5rem;
+
+    border-left: 0rem;
+    border-right: 0rem;
+    padding: 0rem 0.4rem;
+  }
+
+  .top-nav-left ul li {
+    font-size: 1.4rem !important;
+  }
+
+  .top-nav-left ul li:last-child {
+    margin-left: 2rem;
+  }
+  .gallery-section .gallery-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .explorePark-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heartPounding-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .visitor-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-video-image {
+    width: 90%;
+  }
+
+  .hero-video-img {
+    height: 23rem;
+  }
+
+  .hero-section .play-btn {
+    top: 6rem;
+  }
+
+  .ourFarm-section .ourFarm-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8rem 3rem;
+  }
+
+  .purchase-section .purchase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-section .team-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 49.5%;
+  }
+
+  .hero-video-image {
+    width: 100%;
+  }
+
+  .experiance-section .experiance-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem 2rem;
+
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .top-nav-left ul li {
+    font-size: 1.3rem !important;
+  }
+
+  .hero-section h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .top-nav-left ul li:last-child {
+    margin-left: 0.2rem;
+  }
+}
